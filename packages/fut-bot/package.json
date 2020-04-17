@@ -1,0 +1,24 @@
+{
+  "name": "fut-bot",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "ts-node src/index.ts"
+  },
+  "dependencies": {
+    "@types/acorn": "^4.0.5",
+    "@types/cheerio": "^0.22.17",
+    "@types/fs-extra": "^8.1.0",
+    "@types/got": "^9.6.9",
+    "@types/node": "^13.11.1",
+    "@types/pretty": "^2.0.0",
+    "acorn": "^7.1.1",
+    "cheerio": "^1.0.0-rc.3",
+    "fs-extra": "^9.0.0",
+    "got": "^10.7.0",
+    "pretty": "^2.0.0",
+    "tough-cookie": "3",
+    "tough-cookie-filestore": "^0.0.1"
+  }
+}
