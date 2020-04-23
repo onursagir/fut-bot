@@ -31,10 +31,10 @@ class Auth {
     while (hasLoginError) {
       const credentials = yield ({ stage: 'credentials' });
 
-      if (!Array.isArray) throw new Error('auth/credentails-must-be-array');
+      if (!Array.isArray(credentials)) throw new Error('auth/credentails-must-be-array');
 
       // Satisfy TypeScript
-      const [username, password] = Array.isArray(credentials) ? credentials : [];
+      const [username, password] = credentials;
 
       // eslint-disable-next-line no-await-in-loop
       loginPagePost = await this.got({
