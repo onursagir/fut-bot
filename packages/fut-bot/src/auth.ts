@@ -6,7 +6,7 @@ import { authPageURL, getLoginFormValues } from './helpers/auth';
 type LoginStages = 'credentials' | 'verificationMethod' | 'verificationCode'
 type LoginOptions = ['EMAIL', 'SMS', 'VOICE'] | undefined
 
-export type LoginResult = {stage: LoginStages; options?: LoginOptions }
+export type LoginResult = { stage: LoginStages; options?: LoginOptions }
 
 class Auth {
   got: Got
